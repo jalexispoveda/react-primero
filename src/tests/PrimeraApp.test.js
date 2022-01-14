@@ -19,4 +19,18 @@ describe("Probando primeraApp component", () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  test("Debe mostrar el subtitulo mostrado por props ", async () => {
+    const saludo = "Hola";
+    const subtitulo = "Soy un sub";
+
+    const wrapper = shallow(
+      <PrimeraApp saludo={saludo} subtitulo={subtitulo}></PrimeraApp>
+    );
+
+    //find en wrapper funciona como querySelector
+    const textoParrafo = wrapper.find("p").text();
+
+    expect(textoParrafo).toBe(subtitulo);
+  });
 });
