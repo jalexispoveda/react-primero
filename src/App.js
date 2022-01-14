@@ -1,11 +1,12 @@
 import HabitModule from "./components/habit/HabitModule";
 import CounterApp from "./components/counter/CounterApp";
+import PrimeraApp from "./PrimeraApp";
 
 function App() {
   return (
     <div className="App">
-      <h1>HOLA</h1>
       {/* <HabitModule></HabitModule> */}
+      <PrimeraApp saludo="HOLA" subtitulo="Alekei"></PrimeraApp>
       <CounterApp value={1}></CounterApp>
     </div>
   );
