@@ -16,7 +16,7 @@ const CounterApp = (props) => {
   return (
     <React.Fragment>
       <h1>CounterApp</h1>
-      <h2> {counter} </h2>
+      <h2>{counter}</h2>
       <button onClick={substract}>-1</button>
       <button onClick={add}>+1</button>
       <button onClick={() => setCounter(0)}>RESET</button>
